@@ -1,0 +1,8 @@
+kind: Cluster
+apiVersion: kind.sigs.k8s.io/v1alpha3
+nodes:
+# the control plane node config
+- role: control-plane
+  extraMounts:
+  - containerPath: /var/tmp/cellery
+    hostPath: $GITHUB_CLONE_DIRECTORY/k8s-kind/cellery
