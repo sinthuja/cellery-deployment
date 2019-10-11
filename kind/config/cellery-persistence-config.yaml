@@ -5,4 +5,4 @@ nodes:
 - role: control-plane
   extraMounts:
   - containerPath: /var/tmp/cellery
-    hostPath: $GITHUB_CLONE_DIRECTORY/k8s-kind/cellery
+    hostPath: $GITHUB_CLONE_DIRECTORY/kind/cellery
